@@ -26,12 +26,17 @@ function splitSentence(string) {
 let array = string.split(" ")
  
   return array
-}
+} /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
 
 // Desafio 4
-function concatName() {
+function concatName(arrayName) {
   // seu código aqui
-}
+ let firstName = arrayName [0]
+ let lastName = arrayName [arrayName.length-1]
+ let stringName = lastName +", " + firstName    
+     return stringName
+ }
+
 
 // Desafio 5
 function footballPoints() {
