@@ -57,9 +57,17 @@ function highestCount(numberList) {
   /**Source : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max?retiredLocale=it */
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
+ if ((cat1 - mouse) > (cat2 - mouse)) {
+   return "cat2";
+ } else if ( (cat1 - mouse) < (cat2 - mouse) && (cat1 !=0)) {
+   return "cat1";
+ }else if ( ( mouse - cat1) === (cat2 - mouse) ){
+return "os gatos trombam e o rato foge"
+   }
+ }
+
 
 // Desafio 8
 function fizzBuzz() {
