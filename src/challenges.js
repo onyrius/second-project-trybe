@@ -70,10 +70,25 @@ return "os gatos trombam e o rato foge"
 
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numbersFizzBuzz) {
   // seu código aqui
-}
+  let resultFizzBuzz = []
+  
+  for ( let index = 0; index < numbersFizzBuzz.length; index += 1) {
 
+  if ((numbersFizzBuzz[index] %3 ===0) && (numbersFizzBuzz[index]%5===0)) {
+     resultFizzBuzz.push("fizzBuzz");
+  } else if (numbersFizzBuzz[index]%3 ===0) {
+    resultFizzBuzz.push ("fizz");
+  }else if (numbersFizzBuzz[index]%5===0) {
+    resultFizzBuzz.push ("buzz") ;
+    } else{
+     resultFizzBuzz.push ("bug!")
+    }
+  }
+   return resultFizzBuzz;
+  }
+  
 // Desafio 9
 function encode() {
   // seu código aqui
