@@ -1,16 +1,13 @@
-// Desafio 1 
-function compareTrue( a,b ) {
-  // seu código aqui
+// Desafio 1
+function compareTrue(a, b){
+   // seu código aqui
   if ((a) && (b)) {
     return true
   } else {
     return false
-  }
+  };
 } 
   
-
-
-
 // Desafio 2
 function calcArea(base , height) {
   // seu código aqui
@@ -37,18 +34,24 @@ function concatName(arrayName) {
      return stringName
  }
 
-
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-let resultFootball = 0 
-  resultFootball = (wins * 3) + ties
-  return resultFootball
+  let resultFootball = 0;
+  resultFootball = (wins * 3) + ties;
+  return resultFootball;
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(numberList) {
   // seu código aqui
+  let count = 0
+  for (let index=0 ; index < numberList.length; index += 1){
+    if ( (numberList[index] > numberList[index-1]) && (numberList[index] > numberList[index+1])) {
+      count = count + 1
+    }
+  }
+  return count 
 }
 
 // Desafio 7
