@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(a, b){
+function compareTrue(a, b) {
    // seu código aqui
   if ((a) && (b)) {
     return true
@@ -90,11 +90,24 @@ function fizzBuzz(numbersFizzBuzz) {
   }
   
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(code) {
+// seu código aqui
+let codified = ""
+codified = codified + code.replace(/a/gi, 1).replace(/e/gi,2).replace(/i/gi,3).replace(/o/gi,4).replace(/u/gi,5); 
+  
+return codified
 }
-function decode() {
+
+/**Source https://stackoverflow.com/questions/57606351/just-change-the-vowel-to-the-next-letter-in-javascript **/
+ /**Source https://www.codegrepper.com/code-examples/javascript/javascript+replace+function+multiple **/
+
+
+function decode(code) {
   // seu código aqui
+  let decodified = ""
+decodified = decodified + code.replace(/1/gi, "a").replace(/2/gi,"e").replace(/3/gi,"i").replace(/4/gi,"o").replace(/5/gi,"u"); 
+  
+return decodified
 }
 
 module.exports = {
