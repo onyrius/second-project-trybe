@@ -60,15 +60,24 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 
-
-
-
-
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
-
+  let numbers = /\d+/g;
+  let stringList = string.match(numbers);
+ let numbersList = 0
+  for (let i=0; i<stringList.length; i+=1) {
+    numbersList = numbersList + parseInt(+stringList[i])
+ }
+ if (numbersList === 1) {
+   return numbersList + " copo de água"
+ }
+ else{
+  return numbersList + " copos de água"
+} 
 }
+/**Source https://www.youtube.com/watch?v=rACU7OeATI0&ab_channel=AllThingsJavaScript%2CLLC */
+/**Source https://www.youtube.com/watch?v=U62pvnEqEQA&ab_channel=AllThingsJavaScript%2CLLC */
 
 module.exports = {
   generatePhoneNumber,
