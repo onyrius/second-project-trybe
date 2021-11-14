@@ -100,6 +100,7 @@ return codified
 
 /**Source https://stackoverflow.com/questions/57606351/just-change-the-vowel-to-the-next-letter-in-javascript **/
  /**Source https://www.codegrepper.com/code-examples/javascript/javascript+replace+function+multiple **/
+ /**Source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace */
 
 
 function decode(code) {
@@ -108,7 +109,9 @@ function decode(code) {
 decodified = decodified + code.replace(/1/gi, "a").replace(/2/gi,"e").replace(/3/gi,"i").replace(/4/gi,"o").replace(/5/gi,"u"); 
   
 return decodified
-}
+};
+
+
 
 module.exports = {
   calcArea,
