@@ -59,9 +59,7 @@ function generatePhoneNumber(numberPhone) {
 }
  
 
-// console.log(generatePhoneNumber([1,1,2,2,2,2,2,3,6,4,6]));
-
-// console.log(generatePhoneNumber([4,7,9,8,9,7,3,8,4,2,0]));  
+/**Source Ajuda do amigo Leo!!!!  https://github.com/agsleonardo */
          
 
 /**Source https://www.youtube.com/watch?v=Qwp_ECqo9-E&ab_channel=Johnny */
