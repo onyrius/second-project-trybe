@@ -15,57 +15,54 @@ function techList(techno, name) {
    objectTechList.push(objectTech)
  }
  return (objectTechList)
-  
- 
-  }
+ }
 ;
-  // console.log(techList(["java", "css", 'aaaa'], "Suelen"))
-  // console.log(techList("Suelen"))
-
+ /**Source  Com auxílio de Tabata Souto: https://github.com/TabataSouto
+          E Byanca : https://github.com/byancaknorst */
   /**Source https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified */;
   /**Source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter?retiredLocale=it */
 
 
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
-  // let counts = {};
-  
-  //  if (numberPhone.length != 11)  {
-  //   return ("Array com tamanho incorreto.")  
-  //   }
-  //   for (i=0; i<numberPhone.length; i+=1) {
-  //  if (numberPhone[i]<0 ||numberPhone[i] >9) 
-  //   return "não é possível gerar um número de telefone com esses valores" 
-  //  }
-  //   numberPhone.forEach((number) => {
-  //     counts[number] = (counts[number] || 0) + 1;
-      
-  //   }) 
-  //   console.log((counts[number]))
-   
-  //       for(let n in counts){
-  //         if (counts [n]>=3) {
-  //           return ("não é possível gerar um número de telefone com esses valores")
-  //         }else {
-  //       return "(" + numberPhone[0] + numberPhone[1] + ") " + numberPhone[2]+ numberPhone[3]+ numberPhone[4]+ numberPhone[5] + numberPhone[6] + "-" + numberPhone[7]+ numberPhone[8] + numberPhone[9] + numberPhone[10]
 
-  //     }
-  //   }
-}
+function generatePhoneNumber(numberPhone) {
   
+   let impossible = "não é possível gerar um número de telefone com esses valores" 
+   let guardaRepetidos = {};
+    guardaRepetidos = numberPhone.reduce (function(numeros, vezes){
+      if(!numeros[vezes]) {
+        numeros[vezes] = 1;
+      } else {
+        numeros[vezes] += numeros[vezes]
+      }
+      return numeros
+    },{})
+ 
+  
+   if (numberPhone.length != 11)  {
+    return ("Array com tamanho incorreto.")
+  }
+  for (let verify in guardaRepetidos){
+    if (guardaRepetidos[verify] >=3) {
+      return impossible
+    }
+  }
+  for (let i=0; i<numberPhone.length; i+=1) {
+    if ((numberPhone[i]<0) || (numberPhone[i] >9)){ 
+     return impossible 
+    } if ( i == 10 ) {
+     return "(" + numberPhone[0] + numberPhone[1] + ") " + numberPhone[2]+ numberPhone[3]+ numberPhone[4]+ numberPhone[5] + numberPhone[6] + "-" + numberPhone[7]+ numberPhone[8] + numberPhone[9] + numberPhone[10] 
+
+    }
+  } 
+}
+ 
+
 // console.log(generatePhoneNumber([1,1,2,2,2,2,2,3,6,4,6]));
 
-    
+// console.log(generatePhoneNumber([4,7,9,8,9,7,3,8,4,2,0]));  
          
-
-      
-
-
-
-
-
 
 /**Source https://www.youtube.com/watch?v=Qwp_ECqo9-E&ab_channel=Johnny */
 /**Source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size */
