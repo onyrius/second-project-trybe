@@ -6,7 +6,7 @@ function techList(technologies, name) {
     return 'Vazio!';
   }
   for (let technology of technologiesOrdem) {
-   let tech = technology;
+    let tech = technology;
     objectTechList.push({ tech: technology, name });
   }
   return objectTechList;
