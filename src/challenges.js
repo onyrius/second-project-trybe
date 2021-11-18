@@ -1,28 +1,22 @@
 // Desafio 1
 function compareTrue(a, b) {
-   // seu código aqui
+  // seu código aqui
   if ((a) && (b)) {
-    return true
-  } else {
-    return false
-  };
-} 
-  
-// Desafio 2
-function calcArea(base , height) {
-  // seu código aqui
-  
-  let resultado = (base * height)/2; 
-  return resultado
+    return true;
+  }
+  return false;
 }
-
-// Desafio 3
-function splitSentence(string) {
+// Desafio 2
+function calcArea(base, height) {
   // seu código aqui
-  
-let array = string.split(" ")
- 
-  return array
+  let resultado = (base * height) / 2;
+  return resultado;
+}
+// Desafio 3
+function splitSentence(umaString) {
+  // seu código aqui
+  let umaArray = umaString.split('');
+  return umaArray
 } /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
 
 // Desafio 4
