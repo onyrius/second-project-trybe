@@ -20,7 +20,7 @@ Esse projeto foi muito desafiador, uma vez que não sabia praticamente nada de J
 
 ---
 ### Status do projeto
-![alt text](https://github.com/onyrius/second-project-trybe/blob/main/.img/status-projeto.png)
+![alt text](https://github.com/onyrius/second-project-trybe/blob/main/status-projeto.png?raw=true)
 
 ## 🔗 Links
 [![github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/onyrius)
