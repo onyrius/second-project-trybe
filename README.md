@@ -1,4 +1,4 @@
-# Playground Functions
+# Playground Functions Project
 
 Esse projeto foi muito desafiador, uma vez que não sabia praticamente nada de JavaScript! Por amar resolver problemas lógicos, caí de cabeça e no final deu tudo mais do que certo! Hoje, estou "viciada" em resolver problemas :blush:
 
